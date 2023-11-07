@@ -1,0 +1,14 @@
+---
+title: about
+layout: page
+---
+<h2>members:</h2>
+find out more about the folks behind the website. 
+<ul>
+    {% for author in site.authors %}
+    <li class="sideline">
+        <h2>{{ author.name }} - {{ author.position }}</h2>
+        <p>{{ author.content | markdownify }}</p>
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,7 @@
+docs:
+  - title: home
+    url: "/"
+    icon: home
+  - title: blog
+    url: blog
+    icon: pen
