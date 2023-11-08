@@ -2,7 +2,7 @@
 ---
 {% include head.html %}
 <main>
-    <h1>{{ site.title }} | {{ page.title }}</h1>
+    <h1><a href="{{ '/' | relative_url }}" style="color: white; text-decoration: none;">{{ site.title }}</a> | {{ page.title }}</h1>
     {% include menu.html %}
         {{ content }}
     {% include footer.html %}

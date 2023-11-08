@@ -5,3 +5,9 @@ docs:
   - title: blog
     url: blog
     icon: pen
+  - title: gallery
+    url: gallery
+    icon: image
+  - title: about
+    url: about
+    icon: cat
