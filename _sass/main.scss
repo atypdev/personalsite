@@ -4,8 +4,8 @@
     --alt-color: rgba(175, 175, 175, 0.596);
     --link-color: #c0bda5;
     --visited-color: #c0bda5;
-    --pre-color: #000000;
-    --pre-bg-color: #f0f0f0;
+    --pre-color: #eeeeee;
+    --pre-bg-color: rgb(22, 22, 22);
 }
 
 body {
@@ -55,6 +55,7 @@ pre {
     background: var(--pre-bg-color);
     padding: 24px;
     overflow-x: auto;
+    border-radius: 1rem;
 }
 
 article {

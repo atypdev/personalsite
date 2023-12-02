@@ -5,9 +5,15 @@ docs:
   - title: blog
     url: blog
     icon: pen
+  - title: homelab
+    url: homelab
+    icon: server
   - title: gallery
     url: gallery
     icon: image
   - title: about
     url: about
     icon: cat
+  - title: tools
+    url: tools
+    icon: wrench
