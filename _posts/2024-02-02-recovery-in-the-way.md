@@ -60,14 +60,24 @@ There is, *thank the lord above*, a solution to my small abuse of this poor inno
 
     ![](dm_recovowwy.png)
 
+    Perform the quick format!
 
-6. In diskpart:
+
+6. **Lets finish things >:3** Back in diskpart:
 
     1. `list partition`
     2. Select your recovery partition
-    3. The partition IDs for recovery is "de94bba4-06d1-4d40-a16a-bfd50179d6ac", which you can add using `set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac`
-    3. Add the flag: `gpt attributes=0x8000000000000001`
+    3. The partition IDs for recovery is "de94bba4-06d1-4d40-a16a-bfd50179d6ac", which you can add using:
+        > `set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac`
+    3. Add the gpt flag so Windows recognizes the partition:
+        > `gpt attributes=0x8000000000000001`
 
 7. Re-enable `reagentc /enable`'
 
-Freedom at last!
+### Reunited at last!
+
+![](dm_finale.png)
+
+Now our two seperate partitions may become one, and I may rest my head knowing the many 100GB+ games will no longer choke me out of my machine.
+
+<3
