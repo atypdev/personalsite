@@ -2,8 +2,8 @@
     --bg-color: #1D1B1D;
     --font-color: rgb(255, 255, 255);
     --alt-color: rgba(175, 175, 175, 0.596);
-    --link-color: #c0bda5;
-    --visited-color: #c0bda5;
+    --link-color: #b2f3ff;
+    --visited-color: #cec9fa;
     --pre-color: #eeeeee;
     --pre-bg-color: rgb(22, 22, 22);
 }
@@ -44,6 +44,30 @@ h3 {
     line-height: 1.2;
 }
 
+h1 {
+    font-size: 32px;
+    background: linear-gradient(69deg, rgba(91,206,250,1) 0%, rgba(245,169,184,1) 15%, rgba(255,255,255,1) 25%); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 24px;
+    background: linear-gradient(69deg, rgba(91,206,250,1) 0%, rgba(245,169,184,1) 10%, rgba(255,255,255,1) 25%); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+}
+
 p > code {
     color: var(--pre-color);
     background: var(--pre-bg-color);
@@ -64,6 +88,24 @@ article {
 
 summary {
     color: var(--alt-color);
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h3 {
+        margin-top: 5px;
+        font-size: 16px;
+        color: #333;
+    }
 }
 
 table,
