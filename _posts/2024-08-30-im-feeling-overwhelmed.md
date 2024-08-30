@@ -30,6 +30,7 @@ This is the suicide & crisis hotline and they genuinely help, and are also safe 
 
 1. Reach out. You are brave and very strong, and getting the help you need is very important. Try to find a trusted individual with whom you could confide in.
 2. **You are loved and cared for, and you are safe and important.**
+</div>
 <br />
 </details>
 
