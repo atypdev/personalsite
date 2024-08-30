@@ -1,4 +1,9 @@
-# “I'm feeling overwhelmed…”
+---
+title: "\"I'm feeling overwhelmed…\""
+icon: pen
+layout: post
+---
+*I wrote this specifically for you, for moments like these, whenever and wherever you need it. There are tools and resources here that are made to help you.*
 
 <details style='color:#bfc7db'>
 <summary>⚠️ If this is a crisis…</summary>
@@ -29,8 +34,6 @@ This is the suicide & crisis hotline and they genuinely help, and are also safe 
 </details>
 
 Hi. 
-
-I wrote this specifically for you, for moments like these, whenever and wherever you need it. There are tools and resources here that are made to help you. 
 
 Take a second to be mindful of your breathing… Take a few slow, deep breaths so you can bring your mind back down to earth.
 
