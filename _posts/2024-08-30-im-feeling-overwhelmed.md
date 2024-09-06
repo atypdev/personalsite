@@ -3,7 +3,10 @@ title: "\"I'm feeling overwhelmed…\""
 icon: pen
 layout: post
 ---
+
 *I wrote this specifically for you, for moments like these, whenever and wherever you need it. There are tools and resources here that are made to help you.*
+
+<3 
 
 <details style='color:#bfc7db'>
 <summary>⚠️ If this is a crisis…</summary>
