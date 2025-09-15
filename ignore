@@ -1,0 +1,16 @@
+#!/bin/bash
+# Netlify ignore script: skip build if only README.md changed
+
+CHANGED_FILES=$(git diff --name-only $CACHED_COMMIT_REF $COMMIT_REF)
+
+if [ -z "$CHANGED_FILES" ]; then
+  exit 1
+fi
+
+for file in $CHANGED_FILES; do
+  if [ "$file" != "README.md" ]; then
+    exit 1 
+  fi
+done
+
+exit 0
