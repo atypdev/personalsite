@@ -1,6 +1,7 @@
 ---
 title: 2021 Projects!
 layout: post
+excerpt: "List of my projects from 2021"
 ---
 
 A list of every public project I'm working on / finished. Use the sidebar to speed up navigation!

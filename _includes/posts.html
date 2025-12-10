@@ -2,8 +2,10 @@
     {% for post in site.posts %}
       <li>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
         <p id="date">{{ post.date | date: "%B %-d, %Y" }}</date>
+        {% if post.data.excerpt %}
+          <p class="post-excerpt">{{ post.data.excerpt }}</p>
+        {% endif %}
       </li>
     {% endfor %}
 </ul>

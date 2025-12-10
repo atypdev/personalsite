@@ -5,3 +5,4 @@ collections:
   authors:
 plugins:
   - jekyll-toc
+cdn_url: "https://pub-fb004cb3449e4cba91c77c95b0f79e18.r2.dev/images/"

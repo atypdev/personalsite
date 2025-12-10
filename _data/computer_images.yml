@@ -1,0 +1,27 @@
+- image: t42-30.jpg
+  title: ThinkPad T42
+  description: My classic ThinkPad T42 laptop.
+
+- image: t42-desktop.jpg
+  title: ThinkPad T42 Desktop
+  description: Another view of the T42 on a desk.
+
+- image: t42-neo.jpg
+  title: ThinkPad T42 Neo
+  description: Neofetch displayed on the T42.
+
+- image: t540p-aesthetic.jpg
+  title: ThinkPad T540p Aesthetic
+  description: Moody aesthetic capture of my T540p.
+
+- image: thinkpad-stack.jpg
+  title: ThinkPad Stack
+  description: Stack of my ThinkPad laptop collection (so far).
+
+- image: x390-angle.jpg
+  title: ThinkPad X390 Angle
+  description: Angled view of the X390.
+
+- image: x390-desktop.jpg
+  title: ThinkPad X390 Desktop
+  description: Desk setup with the X390.

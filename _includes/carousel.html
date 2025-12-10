@@ -1,0 +1,71 @@
+{% assign data_source = include.data_source | default: 'art_images' %}
+{% assign data = site.data[data_source] %}
+
+<div class="carousel-container" data-carousel="{{ include.id | default: '1' }}">
+  <div class="carousel-wrapper">
+    {% for item in data %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <a href="{{ site.cdn_url }}{{ item.image }}" target="_blank">
+          <img src="{{ site.cdn_url }}{{ item.image }}" alt="{{ item.title }}">
+        </a>
+        <div class="carousel-description">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <button class="carousel-btn prev" onclick="changeSlide({{ include.id | default: '1' }}, -1)">❮</button>
+  <button class="carousel-btn next" onclick="changeSlide({{ include.id | default: '1' }}, 1)">❯</button>
+
+  <div class="carousel-dots">
+    {% for item in data %}
+      <span class="dot {% if forloop.first %}active{% endif %}" onclick="currentSlide({{ include.id | default: '1' }}, {{ forloop.index | jsonify }})"></span>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  (function() {
+    const id = '{{ include.id | default: '1' }}';
+    window.carousels = window.carousels || {};
+    if (!window.carousels[id]) {
+      window.carousels[id] = { currentIndex: 1 };
+    }
+
+    window.changeSlide = window.changeSlide || function(carouselId, n) {
+      const store = window.carousels[carouselId];
+      if (!store) return;
+      showSlide(carouselId, store.currentIndex += n);
+    };
+
+    window.currentSlide = window.currentSlide || function(carouselId, n) {
+      const store = window.carousels[carouselId];
+      if (!store) return;
+      showSlide(carouselId, store.currentIndex = n);
+    };
+
+    window.showSlide = window.showSlide || function(carouselId, n) {
+      const carouselElement = document.querySelector('[data-carousel="' + carouselId + '"]');
+      if (!carouselElement) return;
+
+      const slides = carouselElement.querySelectorAll('.carousel-item');
+      const dots = carouselElement.querySelectorAll('.dot');
+      if (!slides.length) return;
+
+      if (n > slides.length) window.carousels[carouselId].currentIndex = 1;
+      if (n < 1) window.carousels[carouselId].currentIndex = slides.length;
+
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      const idx = window.carousels[carouselId].currentIndex - 1;
+      if (slides[idx]) slides[idx].classList.add('active');
+      if (dots[idx]) dots[idx].classList.add('active');
+    };
+
+    // Initialize this carousel instance immediately
+    window.showSlide(id, window.carousels[id].currentIndex);
+  })();
+</script>

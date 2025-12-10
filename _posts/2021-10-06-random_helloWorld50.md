@@ -1,6 +1,7 @@
 ---
 title: Hello World in 50 different languages!
 layout: post
+excerpt: A curated collection of "Hello World" programs in 50 different programming languages, from Python and JavaScript to esoteric languages like Chef, COW, and Brainfuck. Perfect for curious programmers exploring language diversity!
 ---
 
 "Hello World" is a term very dear to my nerdy heart, so as homage to all beginner programmers' baby steps into the world, I compiled 50 different ways you can say "Hello" to the world!  

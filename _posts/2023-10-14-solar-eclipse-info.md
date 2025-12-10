@@ -2,6 +2,7 @@
 title: "Solar Eclipse Info"
 icon: pen
 layout: post
+excerpt: "Info about the October 14th 2023 solar eclipse as visible from Colorado, with key timing and safety information for viewing."
 ---
 
 *Info about the October 14th 2023 solar eclipse as visible from my home in Colorado.*

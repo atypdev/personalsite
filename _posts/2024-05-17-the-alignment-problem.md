@@ -2,6 +2,7 @@
 title: "The Alignment Problem | Some Light Research"
 icon: pen
 layout: post
+excerpt: "Exploring the challenge of aligning AI systems with human values, covering representation bias, fairness, transparency, and reinforcement learning from human feedback."
 ---
 
 *This post then discusses the Alignment Problem, which refers to the challenge of ensuring that AI systems act in the best interests of humanity, particularly in ethical contexts.*

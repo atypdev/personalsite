@@ -6,3 +6,5 @@ _site/
 .bundle/
 vendor/
 UsersAryacreds
+gemfile.lock
+.DS_Store

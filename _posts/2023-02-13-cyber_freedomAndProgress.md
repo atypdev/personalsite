@@ -2,6 +2,7 @@
 title: "Cyberspace: Freedom and Progress"
 icon: pen
 layout: post
+excerpt: "A call to embrace the principles of freedom, transparency, and collaboration in technology."
 ---
 
 *In the ever-evolving landscape of technology, it is crucial to recognize that its significance extends far beyond the confines of wealthy enclaves or the Silicon Valley elite. This personal project, titled "Cyberspace: Freedom and Progress," aims to emphasize the expansive potential of technology and the importance of ensuring its accessibility to all. By advocating for a democratic and inclusive approach, we strive to empower individuals and safeguard the widespread benefits of technological advancements in our society.*

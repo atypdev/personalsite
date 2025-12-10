@@ -1,6 +1,7 @@
 ---
 title: "Cyberspace: The Black Box"
 layout: post
+excerpt: "Exploring the transparency challenges in AI systems and the importance of understanding how artificial intelligence makes decisions in what we call 'The Black Box.'"
 ---
 
 *In the realm of artificial intelligence, the "Black Box" approach has captivated both curiosity and concern. This personal project, titled "Cyberspace: The Black Box," seeks to delve into the enigmatic inner workings of AI systems, particularly their decision-making processes. By exploring the challenges posed by this lack of transparency and the implications it holds for understanding AI decisions, we aim to shed light on the complex "language" spoken within these black boxes and unravel the mysteries they contain.*

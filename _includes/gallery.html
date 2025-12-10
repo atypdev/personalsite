@@ -1,8 +1,11 @@
-{% for image in site.static_files %}
-  {% if image.path contains '/assets/images' %}
-    <div class="gallery-item">
-      <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}">
-      <h3>{{ image.name }}</h3>
-    </div>
-  {% endif %}
-{% endfor %}
+<h2>Photography Gallery</h2>
+
+{% include carousel.html data_source="art_images" id="1" %}
+
+<br />
+<hr />
+<br />
+
+<h2>Computer Gallery</h2>
+
+{% include carousel.html data_source="computer_images" id="2" %}
