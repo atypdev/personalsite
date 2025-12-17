@@ -1,0 +1,28 @@
+name: Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify Docker
+        run: |
+          docker version
+          docker compose version
+
+      - name: Build and deploy
+        run: |
+          docker compose pull
+          docker compose build
+          docker compose up -d --remove-orphans
+
+      - name: List running containers
+        run: docker ps -a
