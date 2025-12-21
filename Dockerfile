@@ -2,6 +2,9 @@ FROM ruby:3.2-alpine
 
 WORKDIR /app
 
+# Switch to HTTP for Alpine repositories to avoid APK update issues
+RUN sed -i 's/https/http/' /etc/apk/repositories
+
 # Install dependencies
 RUN apk add --no-cache \
     build-base \
