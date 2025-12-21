@@ -1,11 +1,11 @@
-FROM ruby:3.2-alpine
+FROM ruby:3.2-alpine3.24
 
 WORKDIR /app
 
 # Install dependencies
-RUN apk update && apk add --no-cache \
-    build-base \
-    git
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.edge.kernel.org/' /etc/apk/repositories \
+    && apk update \
+    && apk add --no-cache build-base git
 
 # Copy Gemfile and Gemfile.lock
 COPY Gemfile Gemfile.lock* ./
