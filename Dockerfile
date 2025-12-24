@@ -1,4 +1,4 @@
-FROM ruby:3.2-alpine AS builder
+FROM ruby:3.4.8-alpine3.23 AS builder
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ RUN bundle lock --add-platform x86_64-linux-musl && \
     bundle install --deployment --without development test
 
 # Production stage
-FROM ruby:3.2-alpine
+FROM ruby:3.4.8-alpine3.23
 
 WORKDIR /app
 
