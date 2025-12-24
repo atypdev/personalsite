@@ -8,8 +8,6 @@ services:
       - 1.1.1.1
       - 8.8.8.8
 
-    network: host
-
     volumes:
       - site-data:/site/_site:ro
 
@@ -20,8 +18,6 @@ services:
 
     depends_on:
       - jekyll
-
-    network: host
 
     volumes:
       - site-data:/usr/share/nginx/html:ro

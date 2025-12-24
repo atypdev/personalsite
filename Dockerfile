@@ -1,21 +1,24 @@
+FROM ruby:3.2-alpine AS builder
+
+WORKDIR /app
+
+RUN apk add --no-cache build-base git
+
+COPY Gemfile Gemfile.lock* ./
+
+RUN bundle lock --add-platform x86_64-linux-musl && \
+    bundle install --deployment --without development test
+
+# Production stage
 FROM ruby:3.2-alpine
 
 WORKDIR /app
 
-# Install dependencies
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.edge.kernel.org/' /etc/apk/repositories \
-    && apk update \
-    && apk add --no-cache build-base git
+RUN apk add --no-cache git
 
-# Copy Gemfile and Gemfile.lock
-COPY Gemfile Gemfile.lock* ./
+COPY --from=builder /usr/local/bundle /usr/local/bundle
+COPY . .
 
-# Install gems
-RUN bundle lock --add-platform x86_64-linux-musl && \
-    bundle install
-
-# Expose port
 EXPOSE 4000
 
-# Start Jekyll server with live reload and incremental builds
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload", "--incremental", "--force_polling"]
+CMD ["bundle", "exec", "jekyll", "build", "--source", "/app", "--destination", "/app/_site"]
